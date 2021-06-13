@@ -12,3 +12,12 @@ An example of the format of the input file is as followed,
 1       3
 ...
 
+Please cite our paper if the software is used for research works.
+@inproceedings{huang2020structure,
+  title={Structure Preserved Graph Reordering for Fast Graph Processing Without the Pain},
+  author={Huang, Baofu and Liu, Zhidan and Wu, Kaishun},
+  booktitle={2020 IEEE 22nd International Conference on High Performance Computing and Communications; IEEE 18th International Conference on Smart City; IEEE 6th International Conference on Data Science and Systems (HPCCCity/DSS)},
+  pages={44--51},
+  year={2020},
+  organization={IEEE}
+}
