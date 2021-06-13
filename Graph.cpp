@@ -625,7 +625,7 @@ void Graph::Fusion(int vid,int hop,vector<int>& order,vector<int>& type,const in
             {
                 lownum++;
                 type[w] = 3;
-                seed = u; //next seedvertex
+                seed = w; //next seedvertex
             }
             order[w] = RdCount;
         }//end inN
@@ -644,7 +644,7 @@ void Graph::Fusion(int vid,int hop,vector<int>& order,vector<int>& type,const in
             {
                 lownum++;
                 type[w] = 3;
-                seed = u;//next seedvertex
+                seed = w;//next seedvertex
             }
             order[w] = RdCount;
         }//end outN
