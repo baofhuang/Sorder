@@ -3,9 +3,9 @@ The software can be run as followed,
 ./Sorder <filename> [-k [k]]
 
 For example,
-./Sorder LiveJournal.txt -k 3 (LiveJournal.txt is the input file)
+./Sorder LiveJournal.txt -k 2 (LiveJournal.txt is the input file)
 
-The default value of parameter k is 3 if the software is run without setting the parameter k.
+The default value of parameter k is 2 if the software is run without setting the parameter k.
 An example of the format of the input file is as followed,
 0       1
 0       2
