@@ -721,7 +721,7 @@ void Graph::FusionEx(int vid,int hop,vector<int>& order,vector<int>& type,const 
             seedsize++;
             order[u] = RdCount;
             type[u] = 1;
-            Graph::Fusion(u,hop-1,order,type,RdCount,seedsize,highnum,lownum,seed,HDegree);
+            Graph::FusionEx(u,hop-1,order,type,RdCount,seedsize,highnum,lownum,seed,HDegree);
         }
     }
     //outNeighbors
@@ -742,7 +742,7 @@ void Graph::FusionEx(int vid,int hop,vector<int>& order,vector<int>& type,const 
         {
             seedsize++;
             type[u] = 1;
-            Graph::Fusion(u,hop-1,order,type,RdCount,seedsize,highnum,lownum,seed,HDegree);
+            Graph::FusionEx(u,hop-1,order,type,RdCount,seedsize,highnum,lownum,seed,HDegree);
         }
     }
 }
