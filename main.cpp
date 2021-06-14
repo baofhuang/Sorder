@@ -25,7 +25,7 @@ const int INPUTNUM=1;
 int main(int argc, char* argv[]){
 	ios::sync_with_stdio(false);
 	int i;
-	int k = 3;
+	int k = 2;
 	clock_t start, end;
 	string filename;
 
