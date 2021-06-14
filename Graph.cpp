@@ -486,7 +486,6 @@ void Graph::Sorder(vector<int>& retorder, int hop,const int HDegree)
     int seedsize = 0;
     int highnum = 0;
     int lownum = 0;
-    int tmp = 0;
     int seed = -1;
 
     for(int i=0; i<vsize; i++)
@@ -503,14 +502,12 @@ void Graph::Sorder(vector<int>& retorder, int hop,const int HDegree)
 
         while(seed != -1)
         {
-            tmp = seed;
-            seed =-1;
             seedsize = 0;
             highnum = 0;
             lownum = 0;
             RdCount++;
 
-            Graph::Fusion(tmp,hop,order,type,RdCount,seedsize,highnum,lownum,seed,HDegree);
+            Graph::Fusion(seed,hop,order,type,RdCount,seedsize,highnum,lownum,HDegree);
             rd.push_back({seedsize,highnum,lownum,seedsize+highnum+lownum});
         }
     }
@@ -541,11 +538,12 @@ void Graph::Sorder(vector<int>& retorder, int hop,const int HDegree)
     }
 }
 
-void Graph::Fusion(int vid,int hop,vector<int>& order,vector<int>& type,const int RdCount,int& seedsize,int& highnum,int& lownum,int& seed,const int HDegree)
+void Graph::Fusion(int& seed,int hop,vector<int>& order,vector<int>& type,const int RdCount,int& seedsize,int& highnum,int& lownum,const int HDegree)
 {
     vector<int> parent;
     vector<int> children;
-    parent.push_back(vid);
+    parent.push_back(seed);
+    seed = -1;
     //inner
     while(hop--)
     {
