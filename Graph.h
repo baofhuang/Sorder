@@ -73,7 +73,7 @@ public:
     double GapCost(vector<int>& order);
     void Transform();
     void Sorder(vector<int>& order, int hop,const int HDegree);
-    void Fusion(int vid,int hop,vector<int>& order,vector<int>& type,int RdCount,int& seednum,int& highnum,int& lownum,int& seed,const int HDegree);
+    void Fusion(int& seed,int hop,vector<int>& order,vector<int>& type,int RdCount,int& seednum,int& highnum,int& lownum,const int HDegree);
     void FusionEx(int vid,int hop,vector<int>& order,vector<int>& type,int RdCount,int& seednum,int& highnum,int& lownum,int& seed,const int HDegree);
 
     void RCMOrder(vector<int>& order);
