@@ -1,7 +1,7 @@
 CC      = g++
 CPPFLAGS= -Wno-deprecated -O3 -c -m64 -march=native -std=c++11 -DGCC -DRelease
 LDFLAGS = -static -O3 -m64
-SOURCES = main.cpp Util.cpp Graph.cpp UnitHeap.cpp
+SOURCES = main.cpp Util.cpp Graph.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 EXECUTABLE=Sorder
 
